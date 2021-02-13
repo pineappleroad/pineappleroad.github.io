@@ -1,30 +1,108 @@
 <head>
 	<link rel="icon" href="images/album_artwork.ico">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 70%
+        }
+        .center-fit {
+            max-width: 90%;
+            max-height: 70vh;
+            margin: auto;
+        }
+        .textbox {
+            display: grid;
+            height: 5%;
+          	display: flex;
+  			justify-content: center;
+  			align-items: center; 
+  			font-family: 'Courier New';
+  			font-size: 3vh;
+        }
+        .text-fit {
+            max-width: 100%;
+            max-height: 5vh;
+        }
+        .linkbox {
+            display: grid;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .link-fit {
+            max-width: 100%;
+            max-height: 8vh;
+        }
+        .spacer {
+            display: grid;
+            height: 2.5%;
+        }
+    </style>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '899573157532394');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=899573157532394&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
 </head>
 
 <body style="background:#000">
-	<p align="center">
+		<div class="imgbox">
+    		<img class="center-fit" src='images/millionaire_crop.jpg'>
+		</div>		
 
-		<img src="images/millionaire_crop.jpg" class="img-responsive" alt="" width="700" height="700"> </div>
+		<div class="textbox">
+			<b 
+				class="text-fit"
+				style="color:white" 
+				align="center"> 
+			Pineapple Road - Millionaire</b>
+		</div>
+
+        <div class="spacer"></div>
+
+		<div class="linkbox" align="center">
 		
-		<br>
+			<a href="https://open.spotify.com/track/1QL4vitrR4oFEMg1aibYMb?si=LVQvnsb9QW20-Hh_pZOVXg"
+					style="text-decoration: none;">
 
-		<a href="https://open.spotify.com/track/1QL4vitrR4oFEMg1aibYMb?si=LVQvnsb9QW20-Hh_pZOVXg"
-			style="text-decoration: none;">
-		<img 
-			alt="spotify"
-			src="images/spotify.png"
-			width="330" height="136">
-		</a>
+			<img
+				class="link-fit"
+				alt="spotify"
+				src="images/spotify.png">
+			</a>
+			<br>
+		</div>
 
-		<br>
+		<div class="linkbox" align="center">
+			<a href="https://music.apple.com/nl/album/millionaire/1539147622?i=1539147626&l=en">
 
-		<a href="https://music.apple.com/nl/album/millionaire/1539147622?i=1539147626&l=en">
-		<img
-			alt="apple_music"
-			src="images/apple_music.png"
-			width="300" height="109">
-		</a>
+			<img
+				class="link-fit"
+				alt="apple_music"
+				src="images/apple_music.png">
+			</a>		
+			<br>
+		</div>
 
-	</p>
+		<div class="spacer"></div>
 </body>
