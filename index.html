@@ -45,6 +45,9 @@
         }
     </style>
 
+    <!-- Domain verification -->
+    <meta name="facebook-domain-verification" content="h8p10smwzr8d9vszgoiel4erbmqbyd" />
+
     <!-- Facebook Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -58,14 +61,20 @@
     fbq('init', '899573157532394');
     fbq('track', 'PageView');
     </script>
+    <script>
+        function onClick() {
+            fbq('trackCustom', 'Spotify');;
+        };
+    </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=899573157532394&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    
+
 </head>
 
 <body style="background:#000">
+
 		<div class="imgbox">
     		<img class="center-fit" src='images/millionaire_crop.jpg'>
 		</div>		
@@ -82,8 +91,10 @@
 
 		<div class="linkbox" align="center">
 		
-			<a href="https://open.spotify.com/track/1QL4vitrR4oFEMg1aibYMb?si=LVQvnsb9QW20-Hh_pZOVXg"
-					style="text-decoration: none;">
+			<a 
+                onClick="onClick()"
+                href="https://open.spotify.com/track/1QL4vitrR4oFEMg1aibYMb?si=LVQvnsb9QW20-Hh_pZOVXg"
+				style="text-decoration: none;">
 
 			<img
 				class="link-fit"
